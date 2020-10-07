@@ -1,7 +1,10 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -10,7 +13,8 @@
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "olimortimer/laravelshoppingcart": "^4.0"
+        "olimortimer/laravelshoppingcart": "^4.0",
+        "tcg/voyager": "1.1"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -19,7 +23,9 @@
         "phpunit/phpunit": "~6.0"
     },
     "autoload": {
-        "files": ["app/helpers.php"],
+        "files": [
+            "app/helpers.php"
+        ],
         "classmap": [
             "database/seeds",
             "database/factories"
@@ -54,5 +60,11 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
+    },
+    "repositories": {
+        "hooks": {
+            "type": "composer",
+            "url": "https://larapack.io"
+        }
     }
 }

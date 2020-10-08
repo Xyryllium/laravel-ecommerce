@@ -6,17 +6,13 @@
  */
 
 require('./bootstrap');
+import InstantSearch from 'vue-instantsearch';
+import Vue from 'vue'
+Vue.use(InstantSearch);
+import algolia from './components/AlgoliaAutocomplete'
 
-window.Vue = require('vue');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example', require('./components/Example.vue'));
-
-const app = new Vue({
-    el: '#app'
-});
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  components: { algolia }
+})

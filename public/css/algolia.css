@@ -87,3 +87,14 @@
   .algolia-details {
       color: #919191;
   }
+
+  .ais-clear{
+    border: none;
+    background: none;
+  }
+
+  .ais-search-box__submit{
+    background: none;
+  }
+
+ 

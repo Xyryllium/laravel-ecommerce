@@ -36,7 +36,7 @@
 </div>
 
     <div class="container">
-        <ais-index app-id="75LKWEHACA" api-key="807df8e9aca01a170f6cbd64fe23ca2c" index-name="products">
+        <ais-index app-id="{{env('ALGOLIA_APP_ID')}}" api-key="{{env('ALGOLIA_SECRET')}}" index-name="products">
         <div class="search-results-container-algolia">
             <div>
                 <h2>Search</h2>

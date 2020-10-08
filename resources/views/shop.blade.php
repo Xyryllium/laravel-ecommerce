@@ -8,13 +8,11 @@
 
 @section('content')
 
-<div class="breadcrumbs">
-    <div class="container">
+    @component('components.breadcrumbs')
         <a href="/">Home</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
         <span>Shop</span>
-    </div>
-</div> <!-- end breadcrumbs -->
+    @endcomponent
 
 <div class="products-section container">
     <div class="sidebar">

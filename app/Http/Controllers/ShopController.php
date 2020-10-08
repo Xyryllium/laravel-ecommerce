@@ -59,4 +59,9 @@ class ShopController extends Controller
             'mightAlsoLike' => $mightAlsoLike,
         ]);
     }
+
+    public function search(Request $request)
+    {
+        return view('search-results');
+    }
 }

@@ -1,5 +1,5 @@
 <div class="breadcrumbs">
-    <div class="container">
+    <div class="breadcrumbs-container container">
         <div>
             {{ $slot }}
         </div>
